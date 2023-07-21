@@ -1,0 +1,33 @@
+<header class="site-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="header-logo">
+                    <a href="{{ url_for('home') }}">
+                        <img src="{{ url_for('static', filename='assets/images/logo/logo2.png') }}" width="160" height="30" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-10">
+                <div class="main-navigation">
+                    <button class="menu-toggle"><span></span><span></span></button>
+                    <nav class="header-menu">
+                        <ul class="menu food-nav-menu">
+                            <li><a href="{{ url_for('home') }}" {% if page == "home" %}class="active-menu"{% endif %}>Home</a></li>
+                            <li><a href="{{ url_for('menu') }}" {% if page == "menu" %}class="active-menu"{% endif %}>Menu</a></li>
+                            <li><a href="{{ url_for('location') }}" {% if page == "location" %}class="active-menu"{% endif %}>Location</a></li>
+                            <li><a href="{{ url_for('contact') }}" {% if page == "contact" %}class="active-menu"{% endif %}>Contact</a></li>
+                            <li><a href="{{ url_for('about') }}" {% if page == "about" %}class="active-menu"{% endif %}>About</a></li>
+                            
+                            <!-- <li><a href="{{ url_for('home') }}">Home</a></li>
+                            <li><a href="{{ url_for('menu') }}">Menu</a></li>
+                            <li><a href="{{ url_for('location') }}">Location</a></li>
+                            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                            <li><a href="{{ url_for('about') }}">About</a></li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

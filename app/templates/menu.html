@@ -1,0 +1,1065 @@
+{% extends "layout/layout.html" %}
+{% block title %}Menu{% endblock %}
+{% block content %}
+
+
+
+<section class="menu" id="menu">
+    <section class="our-team section">
+        <div class="sec-wp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sec-title text-center mb-5">
+                            <p class="sec-sub-title mb-3">Our Menu</p>
+                            <h2 class="h2-title">Explore our Menu</h2>
+                            <div class="sec-title-shape mb-4">
+                                <img src="{{ url_for('static', filename='assets/images/title-shape.svg') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row team-slider">
+                    <div class="swiper-wrapper">
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#pizzas">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/pizza.jpeg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Les Pizzas</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#pattes">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/pattes.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Les Pattes</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#pastitsio">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/pastitsio.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Pastitsio</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#crepes">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/crepes.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Les Crêpes</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#carte">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/carte.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">À La Carte</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#salade">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/salade.jpeg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Salades</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#grillade">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/grillade.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Grillade</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#plats">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/plats.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Les Plats</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#chinese">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/chinese.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Chinois</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#tacos">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/tacos.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Tacos</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#burger">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/hamburger.png') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Burgers</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#sandwich">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/sandwich.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Sandwich</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#eggs">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/eggs.jpeg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Oeufs</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#CD">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/CD.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Boissons Froids</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#HD">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/HD.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Boissons Chaudes</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#cocktail">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/cocktail.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Cocktails</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#breakfast">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/breakfast.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Petit Déjenuer</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-wp">
+                        <div class="swiper-button-prev swiper-button">
+                            <i class="uil uil-angle-left"></i>
+                        </div>
+                        <div class="swiper-button-next swiper-button">
+                            <i class="uil uil-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Menu List-->
+    <section class="blog-sec section" id="blog">
+        <div class="sec-wp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sec-title text-center mb-5">
+                            <p class="sec-sub-title mb-3">Nos Prix</p>
+                            <h2 class="h2-title">Dernières recettes</h2>
+                            <div class="sec-title-shape mb-4">
+                                <img src="{{ url_for('static', filename='assets/images/title-shape.svg') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--PIZZA / PATTES-->
+            <div class="container">
+                <div class="row equal-height-row">
+                    <div class="col-lg-6" id="pizzas">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/pizza.jpeg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Les Pizzas</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>margarita</p>
+                                                <p>végétarienne</p>
+                                                <p>viande hachée</p>
+                                                <p>thon</p>
+                                                <p>4 fromage</p>
+                                                <p>4 saison</p>
+                                                <p>fruits de mer</p>
+                                                <p>pepperoni</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>35dhs</b></p>
+                                            <p><b>35dhs</b></p>
+                                            <p><b>45dhs</b></p>
+                                            <p><b>50dhs</b></p>
+                                            <p><b>50dhs</b></p>
+                                            <p><b>60dhs</b></p>
+                                            <p><b>60dhs</b></p>
+                                            <p><b>40dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="pattes">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/pattes.jpg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Les Pattes</u></h2>
+                                <p style="text-align: center;"><u>Spaghetti | Penne | Tagliatelle</u></p>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Carbonara</p>
+                                                <p>Fruits de mer</p>
+                                                <p>Viande hachée</p>
+                                                <p>Poulet</p>
+                                                <p>4 fromage</p>
+                                                <p>Chompinagons</p>
+                                                <p>Végétarienne</p>
+                                                <p>Lasagne bolognaise</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>40dhs</b></p>
+                                            <p><b>55dhs</b></p>
+                                            <p><b>45dhs</b></p>
+                                            <p><b>45dhs</b></p>
+                                            <p><b>40dhs</b></p>
+                                            <p><b>30dhs</b></p>
+                                            <p><b>35dhs</b></p>
+                                            <p><b>45dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--PASTITSIO / CARTE-->
+            <div class="container">
+                <div class="row equal-height-row">
+                    <div class="col-lg-6" id="pastitsio">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/pastitsio.jpg') }});">
+                            </div>
+
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Pastitsio</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>À l'ancienne</p>
+                                                <p>poulet</p>
+                                                <p>viande hachée</p>
+                                                <p>mixte</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>35dhs</b></p>
+                                            <p><b>40dhs</b></p>
+                                            <p><b>40dhs</b></p>
+                                            <p><b>45dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="carte">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/carte.jpg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>À La Carte</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Mini pain suisse</p>
+                                                <p>Mini Schneek aux raisins</p>
+                                                <p>Mini Schneek aux chocolat</p>
+                                                <p>Mini croissant simple</p>
+                                                <p>Mini pain aux chocolat</p>
+                                                <p>Toast au fromage</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>06dhs</b></p>
+                                            <p><b>06dhs</b></p>
+                                            <p><b>06dhs</b></p>
+                                            <br>
+                                            <p><b>06dhs</b></p>
+                                            <p><b>06dhs</b></p>
+                                            <p><b>18dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--CREPES -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" id="crepes">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/crepes.jpg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Les Crêpes Sucré</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Nature</p>
+                                                <p>Nutella</p>
+                                                <p>Nutella banane</p>
+                                                <p>Nutella + Amendes</p>
+                                                <p>crêpe maison</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>15dhs</b></p>
+                                            <p><b>25dhs</b></p>
+                                            <p><b>30dhs</b></p>
+                                            <p><b>30dhs</b></p>
+                                            <p><b>35dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Les Crêpes Salé</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <h6>La marocaine<p>Khlii,fromage,oeuf</p>
+                                                </h6>
+                                                <h6>La fromagere<p>Cheddar,edam,gruyére</p>
+                                                </h6>
+                                                <h6>L'américaine<p>Viande hachée,cheddar,oignon confit</p>
+                                                </h6>
+                                                <h6>L'indienne<p>Escalope poulet,poivron rouge,vert et jaune, sauce
+                                                        curry</p>
+                                                </h6>
+                                                <h6>L'océane<p>Crevette,calamar,crème fraiche et parmessan</p>
+                                                </h6>
+                                                <h6>Jambon<p>Fromage,Jambon,crème fraiche</p>
+                                                </h6>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>40dhs</b></p>
+                                            <br>
+                                            <p><b>40dhs</b></p>
+                                            <br>
+                                            <p><b>45dhs</b></p>
+                                            <br>
+                                            <p><b>45dhs</b></p>
+                                            <br>
+                                            <p><b>55dhs</b></p>
+                                            <br>
+                                            <p><b>40dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--SALADES-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" id="salade">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/salade.jpeg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h1 class="h4-title" style="text-align: center;"><u>Salades</u></h1>
+
+                                <div class="dish-info">
+                                    <span style="text-transform: capitalize; text-align: center;">
+                                        <h2>Cesar</h2>
+                                        <p class="h4-title"><b>45dhs</b></p>
+                                        <p>laitue,tomate,poulet,pain croquante parmasean,anchois,sause cesar</p>
+
+                                        <h2>Avocat Crevette</h2>
+                                        <p class="h4-title"><b>55dhs</b></p>
+                                        <p>Avocat,Crevette,Laitue</p>
+
+                                        <h2>Variée</h2>
+                                        <p class="h4-title"><b>40dhs</b></p>
+                                        <p>Laitue,Tomate ,pomme de terre,aricot vert,betterave
+                                            concomire,carotte,<br>thon,coeur de palmier,oeuf,<br>(sause blanche)</p>
+
+                                        <h2>Marociane</h2>
+                                        <p class="h4-title"><b>25dhs</b></p>
+                                        <p>tomate,comocombre,<br>oignon,poivron,vert</p>
+
+                                        <h2>Maison</h2>
+                                        <p class="h4-title"><b>70dhs</b></p>
+                                        <p>4 légumes variée,charcutere,<br>fromage
+                                            rouge,laitue,<br>ananas,mangue,avocat,<br>crevette,péche</p>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Grillade-->
+            <div class="container">
+                <div class="row equal-height-row">
+                    <div class="col-lg-6" id="grillade">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/grillade.jpg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Grillade</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Brochettes Poulet</p>
+                                                <p>Brochettes Boeuf</p>
+                                                <p>Brochettes Viande hachée</p>
+                                                <p>Brochettes mixte (4ps)</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>45dhs</b></p>
+                                            <p><b>55dhs</b></p>
+                                            <p><b>50dhs</b></p>
+                                            <p><b>70dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="plats">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/plats.jpg') }});">
+                            </div>
+
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Les Plats</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Emincé de poulet</p>
+                                                <p>Emincé de viande</p>
+                                                <p>Emincé mixte</p>
+                                                <p>Cordon bleu</p>
+                                                <p>Escalope du chef</p>
+                                                <p>Escalope milanaise</p>
+                                                <p>Filet de boeuf</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>50dhs</b></p>
+                                            <p><b>65dhs</b></p>
+                                            <p><b>55dhs</b></p>
+                                            <p><b>50dhs</b></p>
+                                            <p><b>50dhs</b></p>
+                                            <p><b>50dhs</b></p>
+                                            <p><b>110dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--PLATS / BRUGER-->
+            <div class="container">
+                <div class="row equal-height-row">
+                    <div class="col-lg-6" id="plats">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/chinese.jpg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Les Wooks</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Wok poulet</p>
+                                                <p>Wok viande</p>
+                                                <p>Wok fruits de mer</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>45dhs</b></p>
+                                            <p><b>50dhs</b></p>
+                                            <p><b>60dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Les Noodles</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Noodles Poulet</p>
+                                                <p>Noodles Viande</p>
+                                                <p>Noodles Crevettes</p>
+                                                <p>Noodles Végétarienne</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>40dhs</b></p>
+                                            <p><b>50dhs</b></p>
+                                            <p><b>55dhs</b></p>
+                                            <p><b>35dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="burger">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/hamburger.png') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Burgers</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Burger Classic</p>
+                                                <p>Chessy Burger</p>
+                                                <p>Chicken burger</p>
+                                                <p>Burger de chef</p>
+                                                <p>Egg cheese burger</p>
+                                                <p>Big Burger</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>30dhs</b></p>
+                                            <p><b>35dhs</b></p>
+                                            <p><b>35dhs</b></p>
+                                            <p><b>45dhs</b></p>
+                                            <p><b>40dhs</b></p>
+                                            <p><b>50dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--SANDWICH / TACOS-->
+            <div class="container">
+                <div class="row equal-height-row">
+                    <div class="col-lg-6" id="sandwich">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/sandwich.jpg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Les Sandwiches</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Sandwich poulet</p>
+                                                <p>Sandwich viande</p>
+                                                <p>Sandwich mixte</p>
+                                                <p>Club Sandwich Thon</p>
+                                                <p>Club Sandwich Poulet</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>35dhs</b></p>
+                                            <p><b>40dhs</b></p>
+                                            <p><b>45dhs</b></p>
+                                            <p><b>45dhs</b></p>
+                                            <p><b>45dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="tacos">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/tacos.jpg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Les Tacos</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Tacos poulet</p>
+                                                <p>Tacos viande hachée</p>
+                                                <p>Tacos mixte</p>
+                                                <p>Tacos chawarma</p>
+                                                <p>Tacos thon</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>35dhs</b></p>
+                                            <p><b>40dhs</b></p>
+                                            <p><b>42dhs</b></p>
+                                            <p><b>35dhs</b></p>
+                                            <p><b>40dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Oeufs / Boisson Froids-->
+            <div class="container">
+                <div class="row equal-height-row">
+                    <div class="col-lg-6" id="eggs">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/eggs.jpeg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>L'Oeuf dans tous des états</u>
+                                </h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Oeuf au plat</p>
+                                                <p>Oeufs brouillé</p>
+                                                <p>Omelette nature</p>
+                                                <p>Omelette au fromage</p>
+                                                <p>Omelette aux fines herbes</p>
+                                                <p>Omelette au jambon de dinde</p>
+                                                <p>Omelette au champignons</p>
+                                                <p>Omelette au crevettes</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>14dhs</b></p>
+                                            <p><b>14dhs</b></p>
+                                            <p><b>14dhs</b></p>
+                                            <p><b>16dhs</b></p>
+                                            <p><b>15dhs</b></p>
+                                            <p><b>16dhs</b></p>
+                                            <p><b>16dhs</b></p>
+                                            <p><b>26dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6" id="CD">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/CD.jpg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Boissons Froids</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Sodas</p>
+                                                <p>Red Bull</p>
+                                                <p>Oulmes</p>
+                                                <p>Eau</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>14dhs</b></p>
+                                            <p><b>14dhs</b></p>
+                                            <p><b>14dhs</b></p>
+                                            <p><b>16dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h2 class="h4-title" style="text-align: center;"><u>Jus</u></h2>
+                            <div class="dish-info">
+                                <ul>
+                                    <li>
+                                        <span style="text-transform: capitalize;">
+                                            <p>Orange</p>
+                                            <p>Pamplemousse</p>
+                                            <p>Carotte</p>
+                                            <p>banane orange</p>
+                                            <p>banane au lait</p>
+                                            <p>avocat</p>
+                                            <p>ananas</p>
+                                            <p>mangue</p>
+                                            <p>citron</p>
+                                            <p>citron au gingembre</p>
+                                            <p>kiwi</p>
+                                            <p>pomme</p>
+                                            <p>fraise</p>
+                                            <p>Pananché</p>
+                                            <p>Pananché fruits sec</p>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <p><b>18dhs</b></p>
+                                        <p><b>20dhs</b></p>
+                                        <p><b>20dhs</b></p>
+                                        <p><b>20dhs</b></p>
+                                        <p><b>18dhs</b></p>
+                                        <p><b>22dhs</b></p>
+                                        <p><b>22dhs</b></p>
+                                        <p><b>22dhs</b></p>
+                                        <p><b>16dhs</b></p>
+                                        <p><b>18dhs</b></p>
+                                        <p><b>22dhs</b></p>
+                                        <p><b>18dhs</b></p>
+                                        <p><b>22dhs</b></p>
+                                        <p><b>25dhs</b></p>
+                                        <p><b>30dhs</b></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Boissons Chaudes-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" id="HD">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/HD.jpg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h1 class="h4-title" style="text-align: center;"><u>Boissons Chaudes</u></h1>
+                                <br>
+                                <h3 class="h4-title" style="text-align: center;"><u>Café</u></h3>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <p>Expresso , eau minérale</p>
+                                                <p>Double expresso</p>
+                                                <p>Nespresso</p>
+                                                <p>Lait chaud</p>
+                                                <p>Américano</p>
+                                                <p>Latte macchiato</p>
+                                                <p>Café crème</p>
+                                                <p>Cappuccino italien</p>
+                                                <p>Cappuccino crème chantilly</p>
+                                                <p>Latte macchiato au sirop</p>
+                                                <p>Mocaccino</p>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>14dhs</b></p>
+                                            <p><b>16dhs</b></p>
+                                            <p><b>22dhs</b></p>
+                                            <p><b>10dhs</b></p>
+                                            <p><b>16dhs</b></p>
+                                            <p><b>17dhs</b></p>
+                                            <p><b>16dhs</b></p>
+                                            <p><b>18dhs</b></p>
+                                            <p><b>22dhs</b></p>
+                                            <p><b>22dhs</b></p>
+                                            <p><b>22dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h3 class="h4-title" style="text-align: center;"><u>Chocolat</u></h3>
+                            <div class="dish-info">
+                                <ul>
+                                    <li>
+                                        <span style="text-transform: capitalize;">
+                                            <p>Chaud</p>
+                                            <p>Fondu</p>
+                                            <p>A l'ancienne + crème chantilly</p>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <p><b>18dhs</b></p>
+                                        <p><b>22dhs</b></p>
+                                        <p><b>25dhs</b></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="h4-title" style="text-align: center;"><u>Thé</u></h3>
+                            <div class="dish-info">
+                                <ul>
+                                    <li>
+                                        <span style="text-transform: capitalize;">
+                                            <p>A la menthe</p>
+                                            <p>Noir</p>
+                                            <p>Au lait</p>
+                                            <p>verveine nature au lait</p>
+                                            <p>verveine au lait</p>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <p><b>14dhs</b></p>
+                                        <p><b>14dhs</b></p>
+                                        <p><b>16dhs</b></p>
+                                        <p><b>14dhs</b></p>
+                                        <p><b>16dhs</b></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="h4-title" style="text-align: center;"><u>Infusion</u></h3>
+                            <div class="dish-info">
+                                <ul>
+                                    <li>
+                                        <span style="text-transform: capitalize;">
+                                            <p>Citron</p>
+                                            <p>camomille</p>
+                                            <p>Fruits rouge</p>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <p><b>18dhs</b></p>
+                                        <p><b>18dhs</b></p>
+                                        <p><b>18dhs</b></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h3 class="h4-title" style="text-align: center;"><u>Ice Thé</u></h3>
+                            <div class="dish-info">
+                                <ul>
+                                    <li>
+                                        <span style="text-transform: capitalize;">
+                                            <p>peche</p>
+                                            <p>citron</p>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <p><b>22dhs</b></p>
+                                        <p><b>22dhs</b></p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Cocktails-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" id="cocktail">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/cocktail.jpg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h4-title" style="text-align: center;"><u>Cocktails</u></h2>
+                                <div class="dish-info">
+                                    <ul>
+                                        <li>
+                                            <span style="text-transform: capitalize;">
+                                                <h6>Tropic Tropical<p>orange,ananas,mangue,sirop grenadine</p>
+                                                </h6>
+                                                <h6>Berry Strong<p>banane,fraise,lait et miel</p>
+                                                </h6>
+                                                <h6>RABAT Sunrise<p>orange,ananas,sirop de framboise</p>
+                                                </h6>
+                                                <h6>Long Ice Tea<p>citron,thé glacé,cola</p>
+                                                </h6>
+                                                <h6>Citronade<p>Citron,sucre,eau feuille de menthe</p>
+                                                </h6>
+                                                <h6>Bora Bora<p>ananas,orange,citron</p>
+                                                </h6>
+                                                <h6>Virgin Mojito<p>citron vert,sucre de canne,feuille de
+                                                        menthe,sprite</p>
+                                                </h6>
+                                                <h6>Virgin Mojito aux framboise<p>citron vert ,sucre de
+                                                        canne,feuille de menthe,crème de framboise,sprite</p>
+                                                </h6>
+                                                <h6>Oglobe<p>citron,sucre de canne,curacao bleu,sirop</p>
+                                                </h6>
+                                                <h6>Passio,<p>orange,banane,crème de fruits de la passion</p>
+                                                </h6>
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <p><b>35dhs</b></p>
+                                            <br>
+                                            <p><b>35dhs</b></p>
+                                            <br>
+                                            <p><b>35dhs</b></p>
+                                            <br>
+                                            <p><b>35dhs</b></p>
+                                            <br>
+                                            <p><b>35dhs</b></p>
+                                            <br>
+                                            <p><b>35dhs</b></p>
+                                            <br>
+                                            <p><b>40dhs</b></p>
+                                            <br>
+                                            <p><b>40dhs</b></p>
+                                            <br>
+                                            <p><b>40dhs</b></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Petit Dejeuner-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12" id="breakfast">
+                        <div class="blog-box">
+                            <div class="blog-img back-img"
+                                style="background-image: url({{ url_for('static', filename='assets/images/Plats/breakfast.jpg') }});">
+                            </div>
+                            <div class="blog-text">
+                                <h2 class="h2-title" style="text-align: center;"><u>Petit Déjenuer</u></h2>
+
+                                <div class="dish-info">
+                                    <span style="text-transform: capitalize; text-align: center;">
+                                        <h2>Petit Déjenuer Express</h2>
+                                        <p class="h4-title"><b>25dhs</b></p>
+                                        <p>Boisson chaude,vinoissiere,jus d'orange</p>
+
+                                        <h2>Petit Déjenuer Classic</h2>
+                                        <p class="h4-title"><b>30dhs</b></p>
+                                        <p>Boisson chaude,oeuf au plat,huile d'olive,Olive noir,pain,jus d'orange
+                                        </p>
+
+                                        <h2>Petit Déjenuer Beldi</h2>
+                                        <p class="h4-title"><b>35dhs</b></p>
+                                        <p>Boisson chaude,Hercha,Rghifa,<br>Baghrir,pain
+                                            chaair,Amlou,Jben,<br>,Olive noir,huile d'olive,Confiture</p>
+
+                                        <h2>Petit Déjenuer Chamali</h2>
+                                        <p class="h4-title"><b>55dhs</b></p>
+                                        <p>Boisson chaude,oeuf aux choix,charcuterie,<br>Surimi,Fromage
+                                            Rouge,Beure,Jben,<br>,Olive noir,huile d'olive,Confiture,<br>Yaourt aux
+                                            fruits,Jus Orange,bouteille eau,<br>Pain grillé
+                                        <p>
+
+                                        <h2>Croque Monsieur</h2>
+                                        <p class="h4-title"><b>45dhs</b></p>
+                                        <p>Toast,charcuterie,<br>Fromage,surimi,Petit salade,<br>jben,olive
+                                            noir,huile d'olive,boisson chaude,jus orange</p>
+
+                                        <h2>Petit Déjenuer Fassi</h2>
+                                        <p class="h4-title"><b>42dhs</b></p>
+                                        <p>Boisson chaude,Khlii<br>Jus Orange,Olive noir, huile d'olive</p>
+
+                                        <h2>Petit Déjenuer Maison</h2>
+                                        <p class="h4-title"><b>75dhs</b></p>
+                                        <p>Boisson chaude,jus panaché<br>tajine pil pil,crepe
+                                            Nutella,<br>pain,jben,oeuf poché,<br>olive noir,huile d'olive,yaourt aux
+                                            fruits</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+{% endblock content %}

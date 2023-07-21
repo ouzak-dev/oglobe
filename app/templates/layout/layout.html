@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - OGlobe Gourmet</title>
+    <link rel="icon" href="{{ url_for('static', filename='assets/images/logo/logo3.png') }}" type="image">
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bootstrap.min.css') }}">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/swiper-bundle.min.css') }}">
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/jquery.fancybox.min.css') }}">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>@media (max-width: 991px) {.header-menu {background-image: url("{{ url_for('static', filename='assets/images/blog-pattern-bg.png') }}") !important}}</style>
+    {% block custom_css %}{% endblock %}
+</head>
+<body class="body-fixed">
+    {% include 'layout/header.html' %}
+    {% block content %}{% endblock %}
+    {% include 'layout/footer.html' %}
+    {% block custom_js %}{% endblock %}
+</body>
+</html>

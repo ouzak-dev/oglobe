@@ -8,7 +8,7 @@ cloudscraper==1.2.71
 colorama==0.4.6
 distlib==0.3.6
 filelock==3.12.0
-Flask==2.3.2
+Flask
 Flask-Mail==0.9.1
 Flask-Session==0.5.0
 Flask-SQLAlchemy==3.0.3

@@ -62,16 +62,13 @@
         <div class="row">
             <div class="col-lg-8 m-auto">
                 <div class="about-video">
-                    <div class="about-video-img"
-                        style="background-image: url({{ url_for('static', filename='assets/images/main-b.jpg') }});">
-                    </div>
-                    <div class="play-btn-wp">
-                        <a href="{{ url_for('static', filename='assets/images/video.mp4') }}" data-fancybox="video"
-                            class="play-btn">
-                            <i class="uil uil-play"></i>
-
-                        </a>
-                        <span>Voir la vidéo</span>
+                    <div class="about-video-img">
+                        <video id="apvideo" muted playsinline loop>
+                            <source src="{{ url_for('static', filename='assets/images/video.mp4') }}" type="video/mp4">
+                        </video>
+                        <script>
+                            document.getElementById('apvideo').play();
+                        </script>
                     </div>
                 </div>
             </div>
@@ -402,7 +399,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="row">
+                    <div class="row center-it">
 
                         <div class="col-sm-6">
                             <div class="testimonials-box">
@@ -417,12 +414,12 @@
                                     </div>
 
                                 </div>
-                                <a href="https://goo.gl/maps/NnF3evcRvVMyW1s58">
+                                <a target="_blank" href="https://goo.gl/maps/NnF3evcRvVMyW1s58">
                                     <div class="testimonials-box-text">
                                         <h3 class="h3-title">
                                             Hajar Haybout
                                         </h3>
-                                        <p>Good food and excellent ambiance!</p>
+                                        <p class="color-tes">Good food and excellent ambiance!</p>
                                     </div>
                                 </a>
                             </div>
@@ -441,12 +438,12 @@
                                     </div>
 
                                 </div>
-                                <a href="https://goo.gl/maps/GMLGkNvmXgHTZpBn6">
+                                <a target="_blank" href="https://goo.gl/maps/GMLGkNvmXgHTZpBn6">
                                     <div class="testimonials-box-text">
                                         <h3 class="h3-title">
                                             Oumnia Bouaddi
                                         </h3>
-                                        <p>Amaaaazing food! Total hidden gem!</p>
+                                        <p class="color-tes">Amaaaazing food! Total hidden gem!</p>
                                     </div>
                                 </a>
                             </div>
@@ -465,12 +462,13 @@
 
                                 </div>
 
-                                <a href="https://goo.gl/maps/tQX9g81q3XfFcL1HA">
+                                <a target="_blank" href="https://goo.gl/maps/tQX9g81q3XfFcL1HA">
                                     <div class="testimonials-box-text">
                                         <h3 class="h3-title">
                                             Yassine E. A.
                                         </h3>
-                                        <p>The cafe is situated in a super quiet street and surrounded by plants
+                                        <p class="color-tes">The cafe is situated in a super quiet street and surrounded
+                                            by plants
                                             and has a superb patio. They serve excellent food and the service is
                                             to a western standards.</p>
                                     </div>
@@ -489,12 +487,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="https://goo.gl/maps/6gisQjXbAmshnjZs6">
+                                <a target="_blank" href="https://goo.gl/maps/6gisQjXbAmshnjZs6">
                                     <div class="testimonials-box-text">
                                         <h3 class="h3-title">
                                             João Leitão
                                         </h3>
-                                        <p>During my recent visit to Restaurant O'Globe Gourmet, I had the
+                                        <p class="color-tes">During my recent visit to Restaurant O'Globe Gourmet, I had
+                                            the
                                             pleasure of enjoying a delightful breakfast with my family.</p>
                                     </div>
                                 </a>
@@ -513,12 +512,13 @@
                                     </div>
 
                                 </div>
-                                <a href="https://goo.gl/maps/E4XC3UAZa4egwGXj9">
+                                <a target="_blank" href="https://goo.gl/maps/E4XC3UAZa4egwGXj9">
                                     <div class="testimonials-box-text">
                                         <h3 class="h3-title">
                                             FURIO ZANOTTO
                                         </h3>
-                                        <p>One of the best place to enjoy a very good breakfast and more.</p>
+                                        <p class="color-tes">One of the best place to enjoy a very good breakfast and
+                                            more.</p>
                                     </div>
                                 </a>
                             </div>
@@ -535,12 +535,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <a href="https://goo.gl/maps/PD1XgETwbc7Ths6m8">
+                                <a target="_blank" href="https://goo.gl/maps/PD1XgETwbc7Ths6m8">
                                     <div class="testimonials-box-text">
                                         <h3 class="h3-title">
                                             Simohamed elilam
                                         </h3>
-                                        <p>Le patron est un grand homme il est tout le temps au service de ces
+                                        <p class="color-tes">Le patron est un grand homme il est tout le temps au
+                                            service de ces
                                             clients</p>
                                     </div>
                                 </a>

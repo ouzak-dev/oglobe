@@ -12,25 +12,20 @@
                     <div class="sec-title-shape mb-4">
                         <img src="{{ url_for('static', filename='assets/images/title-shape.svg') }}" alt="">
                     </div>
-                    <p>Oglobe Gourmet est une destination incontournable pour les épicuriens, offrant une cuisine
-                        créative et diversifiée. Notre chef talentueux compose des plats avec des ingrédients frais
-                        et de qualité. Au menu, des classiques comme les pizzas, tagines et tacos. Notre équipe
-                        chaleureuse assure une expérience mémorable dans une ambiance élégante et accueillante. Un
-                        lieu parfait pour une pause gourmande ou un café exquis.</p>
+                    <p>Oglobe Gourmet est une destination incontournable pour les épicuriens, offrant une cuisine créative et diversifiée. Notre chef talentueux compose des plats avec des ingrédients frais et de qualité. Au menu, des classiques comme les pizzas, tagines et tacos. Notre équipe chaleureuse assure une expérience mémorable dans une ambiance élégante et accueillante. Un lieu parfait pour une pause gourmande ou un café exquis.</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8 m-auto">
                 <div class="about-video">
-                    <div class="about-video-img" style="background-image: url({{ url_for('static', filename='assets/images/main-b.jpg') }});">
-                    </div>
-                    <div class="play-btn-wp">
-                        <a href="{{ url_for('static', filename='assets/images/video.mp4') }}" data-fancybox="video" class="play-btn">
-                            <i class="uil uil-play"></i>
-
-                        </a>
-                        <span>Voir la vidéo</span>
+                    <div class="about-video-img">
+                        <video id="apvideo" muted playsinline loop>
+                            <source src="{{ url_for('static', filename='assets/images/video.mp4') }}" type="video/mp4">
+                        </video>
+                        <script>
+                            document.getElementById('apvideo').play();
+                        </script>
                     </div>
                 </div>
             </div>

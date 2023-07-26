@@ -1,3 +1,104 @@
+/* custom edits */
+
+.center-it {
+    justify-content: center !important;
+}
+
+.color-tes, .color-tes:hover {
+    color: #212529 !important;
+}
+
+.color-lc {
+    color: #212529 !important;
+}
+
+.color-lc:hover {
+    color: #ff8243 !important;
+}
+
+.smnav {
+    white-space: nowrap;
+}
+
+.text-right {
+    text-align-last: right !important;
+}
+
+.btn-main-sm {
+    border-radius: 8px;
+    border-color: #ff8243;
+}
+
+.btn-main-sm:hover {
+    border-radius: 8px;
+    border-color: #212529;
+}
+
+.c-p-l {
+    padding-left: 18px !important;
+}
+
+/* end custom edits */
+
+
+
+/* alert: alert messages */
+
+.info {
+    background-color: #fff;
+    color: #4d9dda !important;
+}
+
+.error {
+    background-color: #fff;
+    color: #e25c4d !important;
+}
+
+.success {
+    background-color: #fff;
+    color: #59ab6e !important;
+}
+
+.alert-modal {
+    position: fixed;
+    width: fit-content;
+    top: 120px;
+    right: 0px;
+    z-index: 1000;
+    font-family: "roboto", sans-serif;
+}
+
+.alert {
+    left: 1px;
+    display: flex;
+    color: #fff;
+    flex-wrap: nowrap;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    padding: 0.6rem 0.6rem;
+    flex-direction: row-reverse;
+    border-radius: 60px 0 0 60px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(177, 177, 177, .28);
+}
+
+.alert-modal i.icon-delete {
+    font-size: 1.2em;
+    display: block;
+    margin: 2px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.alert-modal span {
+    display: block;
+    font-weight: 600;
+    margin: auto;
+    padding: 4px;
+}
+
+/* end alert messages */
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 /* font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; */

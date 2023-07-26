@@ -1,3 +1,23 @@
+
+// close alert message
+
+$(".non-animated").animate({ left: "0" })
+$(".non-animated").removeClass(".non-animated").delay(6000).fadeOut(
+    function () {
+        $(this).remove();
+    });
+if ($(".alert-modal .alert").length > 2) {
+    $(".alert-modal .alert").eq(0).remove();
+}
+$(document).on(
+    "click",
+    ".alert-modal .alert",
+    function () {
+        $(this).stop(false, true);
+});
+
+
+
 $(document).ready(function ($) {
     "use strict";
 
@@ -135,10 +155,10 @@ jQuery(window).on('load', function () {
     }
 
     // initial position on first === All 
-    gsap.set(".filter-active", {
-        x: targets[0].offsetLeft,
-        width: targets[0].offsetWidth
-    });
+    // gsap.set(".filter-active", {
+    //     x: targets[0].offsetLeft,
+    //     width: targets[0].offsetWidth
+    // });
 
     function moveBar() {
         if (this.index != activeTab) {

@@ -1,4 +1,5 @@
-from flask import render_template, session, request, redirect, url_for, flash, abort
+from flask import render_template, request, redirect, flash, url_for
+from app.functions import send_email
 from app import app
 
 ####################################################################################################
@@ -31,6 +32,26 @@ def about():
 def location():
     return render_template('location.html', page="location")
 
-@app.route('/contact')
+@app.get('/contact')
 def contact():
     return render_template('contact.html', page="contact")
+
+@app.post('/contact')
+def submit_message():
+    data = request.form
+    name = data.get("name", None)
+    email = data.get("email", None)
+    subject = data.get("subject", "")
+    message = data.get("message", None)
+    if not name:
+        flash("Please put your name", "error")
+    elif not email:
+        flash("Please put your email", "error")
+    elif not message:
+        flash("You can't send empty message", "error")
+    else:
+        if send_email(name, email, subject, message):
+            flash("Your message has been sent", "success")
+        else:
+            flash("Something went wrong,Please try again", "error")
+    return redirect(url_for('contact'))

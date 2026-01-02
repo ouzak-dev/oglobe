@@ -11,8 +11,8 @@ app.config['MAIL_CONTACT'] = "contact@oglobe.ma"
 # Mail credentials
 app.config['MAIL_SERVER'] = "mail.privateemail.com"
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = "auto@oglobe.ma"
-app.config['MAIL_PASSWORD'] = "oglobe2023oglobe.ma"
+app.config['MAIL_USERNAME'] = "auto@example.com"
+app.config['MAIL_PASSWORD'] = "Password@example"
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 MAIL = Mail(app)

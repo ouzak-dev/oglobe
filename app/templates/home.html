@@ -1,0 +1,561 @@
+{% extends "layout/layout.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<section class="main-banner" id="home">
+    <div class="js-parallax-scene">
+        <div class="banner-shape-1 w-100" data-depth="0.30">
+            <img src="{{ url_for('static', filename='assets/images/design.png') }}" alt="design" loading="lazy">
+        </div>
+        <div class="banner-shape-2 w-100" data-depth="0.25">
+            <img src="{{ url_for('static', filename='assets/images/design.png') }}" alt="design" loading="lazy">
+        </div>
+    </div>
+    <div class="sec-wp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="banner-text">
+                        <h1 class="h1-title">
+                            Welcome to
+                            <span>OGLOBE</span>
+                            gourmet
+                        </h1>
+                        <p>Envie de manger ? Envie de passer un bon moment ?
+                            Alors venez chez Oglobe Gourmet, où notre menu varié vous offre une multitude d'options
+                            alléchantes. Prêt à vous régaler ?</p>
+                        <div class="banner-btn mt-4">
+                            <a href="{{ url_for('menu') }}" class="sec-btn">Consultez notre menu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner-img-wp">
+                        <div class="banner-img"
+                            style="background-image: url({{ url_for('static', filename='assets/images/main-b.jpg') }})">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-sec section" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="sec-title text-center mb-5">
+                    <p class="sec-sub-title mb-3">À propos de nous</p>
+                    <h2 class="h2-title">Découvrez l'histoire de<span> notre restaurant</span></h2>
+                    <div class="sec-title-shape mb-4">
+                        <img src="{{ url_for('static', filename='assets/images/title-shape.svg') }}" alt=""
+                            loading="lazy">
+                    </div>
+                    <p>Oglobe Gourmet est une destination incontournable pour les épicuriens, offrant une cuisine
+                        créative et diversifiée. Notre chef talentueux compose des plats avec des ingrédients frais
+                        et de qualité. Au menu, des classiques comme les pizzas, tagines et tacos. Notre équipe
+                        chaleureuse assure une expérience mémorable dans une ambiance élégante et accueillante. Un
+                        lieu parfait pour une pause gourmande ou un café exquis.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 m-auto">
+                <div class="about-video">
+                    <div class="about-video-img">
+                        <video id="apvideo" muted playsinline loop>
+                            <source src="{{ url_for('static', filename='assets/images/video.mp4') }}" type="video/mp4">
+                        </video>
+                        <script>
+                            document.getElementById('apvideo').play();
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu" id="menu">
+    <section class="our-team section">
+        <div class="sec-wp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="sec-title text-center mb-5">
+                            <p class="sec-sub-title mb-3">Our Menu</p>
+                            <h2 class="h2-title">Explore our Menu</h2>
+                            <div class="sec-title-shape mb-4">
+                                <img src="{{ url_for('static', filename='assets/images/title-shape.svg') }}" alt=""
+                                    loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row team-slider">
+                    <div class="swiper-wrapper">
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#pizzas">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/pizza.jpeg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Les Pizzas</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#pattes">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/pattes.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Les Pattes</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#pastitsio">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/pastitsio.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Pastitsio</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#crepes">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/crepes.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Les Crêpes</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#carte">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/carte.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">À La Carte</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#salade">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/salade.jpeg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Salades</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#grillade">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/grillade.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Grillade</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#plats">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/plats.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Les Plats</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#chinese">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/chinese.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Chinois</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#tacos">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/tacos.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Tacos</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#burger">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/hamburger.png') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Burgers</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#sandwich">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/sandwich.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Sandwich</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#eggs">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/eggs.jpeg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Oeufs</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#CD">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/CD.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Boissons Froids</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#HD">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/HD.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Boissons Chaudes</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#cocktail">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/cocktail.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Cocktails</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-2 swiper-slide">
+                            <a href="{{ url_for('menu') }}#breakfast">
+                                <div class="team-box text-center">
+                                    <div style="background-image: url({{ url_for('static', filename='assets/images/Plats/breakfast.jpg') }});"
+                                        class="team-img back-img">
+                                    </div>
+                                    <h3 class="h3-title">Petit Déjenuer</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-wp">
+                        <div class="swiper-button-prev swiper-button">
+                            <i class="uil uil-angle-left"></i>
+                        </div>
+                        <div class="swiper-button-next swiper-button">
+                            <i class="uil uil-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<section class="book-table section bg-light">
+    <div class="book-table-shape">
+        <img src="{{ url_for('static', filename='assets/images/table-leaves-shape.png') }}" alt="" loading="lazy">
+    </div>
+    <div class="book-table-shape book-table-shape2">
+        <img src="{{ url_for('static', filename='assets/images/table-leaves-shape.png') }}" alt="" loading="lazy">
+    </div>
+    <div class="sec-wp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sec-title text-center mb-5">
+                        <p class="sec-sub-title mb-3">Heures d'ouverture</p>
+                        <h2 class="h2-title">Table d'ouverture</h2>
+                        <div class="sec-title-shape mb-4">
+                            <img src="{{ url_for('static', filename='assets/images/title-shape.svg') }}" alt=""
+                                loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="book-table-info">
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="table-title text-center">
+                            <h3>11 Rue Al Achaari</h3>
+                            <p>Rabat 10090</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <a href="tel:+212537778480">
+                            <div class="call-now text-center">
+                                <p><i class="uil uil-phone"></i>
+                                    0537778480</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="table-title text-center">
+                            <h3>Lundi à Dimanche</h3>
+                            <p>07:00 à 19:45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="gallery">
+                <div class="col-lg-10 m-auto">
+                    <div class="book-table-img-slider" id="icon">
+                        <div class="swiper-wrapper">
+                            <a href="{{ url_for('static', filename='assets/images/bt1.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt1.jpg') }})"></a>
+                            <a href="{{ url_for('static', filename='assets/images/bt2.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt2.jpg') }})"></a>
+                            <a href="{{ url_for('static', filename='assets/images/bt3.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt3.jpg') }})"></a>
+                            <a href="{{ url_for('static', filename='assets/images/bt4.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt4.jpg') }})"></a>
+                            <a href="{{ url_for('static', filename='assets/images/bt5.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt5.jpg') }})"></a>
+                            <a href="{{ url_for('static', filename='assets/images/bt6.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt6.jpg') }})"></a>
+                            <a href="{{ url_for('static', filename='assets/images/bt7.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt7.jpg') }})"></a>
+                            <a href="{{ url_for('static', filename='assets/images/bt8.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt8.jpg') }})"></a>
+                            <a href="{{ url_for('static', filename='assets/images/bt9.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt9.jpg') }})"></a>
+                            <a href="{{ url_for('static', filename='assets/images/bt10.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt10.jpg') }})"></a>
+                            <a href="{{ url_for('static', filename='assets/images/bt11.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt11.jpg') }})"></a>
+                            <a href="{{ url_for('static', filename='assets/images/bt12.jpg') }}"
+                                data-fancybox="table-slider" class="book-table-img back-img swiper-slide"
+                                style="background-image: url({{ url_for('static', filename='assets/images/bt12.jpg') }})"></a>
+                        </div>
+                        <div class="swiper-button-wp">
+                            <div class="swiper-button-prev swiper-button">
+                                <i class="uil uil-angle-left"></i>
+                            </div>
+                            <div class="swiper-button-next swiper-button">
+                                <i class="uil uil-angle-right"></i>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="testimonials section bg-light">
+    <div class="sec-wp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sec-title text-center mb-5">
+                        <p class="sec-sub-title mb-3">Avis Clients</p>
+                        <h2 class="h2-title">Qu'est-ce que nos clients disent de nous ?</h2>
+                        <p>Source : <span class="name">Google Maps</span></p>
+                        <div class="sec-title-shape mb-4">
+                            <img src="{{ url_for('static', filename='assets/images/title-shape.svg') }}" alt=""
+                                loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row center-it">
+
+                        <div class="col-sm-6">
+                            <div class="testimonials-box">
+                                <div class="testimonial-box-top">
+                                    <div class="testimonials-box-img back-img"
+                                        style="background-image: url({{ url_for('static', filename='assets/images/testimonials/t1.jpeg') }});">
+                                    </div>
+                                    <div class="star-rating-wp">
+                                        <div class="star-rating">
+                                            <span class="star-rating__fill" style="width:80%"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a target="_blank" href="https://goo.gl/maps/NnF3evcRvVMyW1s58">
+                                    <div class="testimonials-box-text">
+                                        <h3 class="h3-title">
+                                            Hajar Haybout
+                                        </h3>
+                                        <p class="color-tes">Good food and excellent ambiance!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class="testimonials-box">
+                                <div class="testimonial-box-top">
+                                    <div class="testimonials-box-img back-img"
+                                        style="background-image: url({{ url_for('static', filename='assets/images/testimonials/t2.jpeg') }});">
+                                    </div>
+                                    <div class="star-rating-wp">
+                                        <div class="star-rating">
+                                            <span class="star-rating__fill" style="width:100%"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a target="_blank" href="https://goo.gl/maps/GMLGkNvmXgHTZpBn6">
+                                    <div class="testimonials-box-text">
+                                        <h3 class="h3-title">
+                                            Oumnia Bouaddi
+                                        </h3>
+                                        <p class="color-tes">Amaaaazing food! Total hidden gem!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="testimonials-box">
+                                <div class="testimonial-box-top">
+                                    <div class="testimonials-box-img back-img"
+                                        style="background-image: url({{ url_for('static', filename='assets/images/testimonials/t3.jpg') }});">
+                                    </div>
+                                    <div class="star-rating-wp">
+                                        <div class="star-rating">
+                                            <span class="star-rating__fill" style="width:100%"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <a target="_blank" href="https://goo.gl/maps/tQX9g81q3XfFcL1HA">
+                                    <div class="testimonials-box-text">
+                                        <h3 class="h3-title">
+                                            Yassine E. A.
+                                        </h3>
+                                        <p class="color-tes">The cafe is situated in a super quiet street and surrounded
+                                            by plants
+                                            and has a superb patio. They serve excellent food and the service is
+                                            to a western standards.</p>
+                                    </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="testimonials-box">
+                                <div class="testimonial-box-top">
+                                    <div class="testimonials-box-img back-img"
+                                        style="background-image: url({{ url_for('static', filename='assets/images/testimonials/t4.jpeg') }});">
+                                    </div>
+                                    <div class="star-rating-wp">
+                                        <div class="star-rating">
+                                            <span class="star-rating__fill" style="width:80%"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a target="_blank" href="https://goo.gl/maps/6gisQjXbAmshnjZs6">
+                                    <div class="testimonials-box-text">
+                                        <h3 class="h3-title">
+                                            João Leitão
+                                        </h3>
+                                        <p class="color-tes">During my recent visit to Restaurant O'Globe Gourmet, I had
+                                            the
+                                            pleasure of enjoying a delightful breakfast with my family.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="testimonials-box">
+                                <div class="testimonial-box-top">
+                                    <div class="testimonials-box-img back-img"
+                                        style="background-image: url({{ url_for('static', filename='assets/images/testimonials/t5.jpg') }});">
+                                    </div>
+                                    <div class="star-rating-wp">
+                                        <div class="star-rating">
+                                            <span class="star-rating__fill" style="width:100%"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a target="_blank" href="https://goo.gl/maps/E4XC3UAZa4egwGXj9">
+                                    <div class="testimonials-box-text">
+                                        <h3 class="h3-title">
+                                            FURIO ZANOTTO
+                                        </h3>
+                                        <p class="color-tes">One of the best place to enjoy a very good breakfast and
+                                            more.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="testimonials-box">
+                                <div class="testimonial-box-top">
+                                    <div class="testimonials-box-img back-img"
+                                        style="background-image: url({{ url_for('static', filename='assets/images/testimonials/t6.jpg') }});">
+                                    </div>
+                                    <div class="star-rating-wp">
+                                        <div class="star-rating">
+                                            <span class="star-rating__fill" style="width:100%"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a target="_blank" href="https://goo.gl/maps/PD1XgETwbc7Ths6m8">
+                                    <div class="testimonials-box-text">
+                                        <h3 class="h3-title">
+                                            Simohamed elilam
+                                        </h3>
+                                        <p class="color-tes">Le patron est un grand homme il est tout le temps au
+                                            service de ces
+                                            clients</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

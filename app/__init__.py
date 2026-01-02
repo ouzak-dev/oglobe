@@ -1,11 +1,15 @@
 from flask import Flask
 from flask_mail import Mail, Message
 import secrets
+import os
 
 # create the app
 app = Flask(__name__)
-# add a secret key
-app.config["SECRET_KEY"] = secrets.token_hex()
+
+# SECRET_KEY configuration
+# In production, set the SECRET_KEY environment variable
+# For development, a random key is generated (but will change on restart)
+app.config["SECRET_KEY"] = os.environ.get('SECRET_KEY') or secrets.token_hex(32)
 # contact mail
 app.config['MAIL_CONTACT'] = "contact@oglobe.ma"
 # Mail credentials

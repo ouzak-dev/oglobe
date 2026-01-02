@@ -17,10 +17,11 @@ app.config['MAIL_SERVER'] = os.environ.get('MAIL_SERVER')
 app.config['MAIL_PORT'] = os.environ.get('MAIL_PORT')
 app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')
 app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
-app.config['MAIL_USE_TLS'] = False
-app.config['MAIL_USE_SSL'] = True
+app.config['MAIL_USE_TLS'] = os.environ.get('MAIL_USE_TLS')
+app.config['MAIL_USE_SSL'] = os.environ.get('MAIL_USE_SSL')
 MAIL = Mail(app)
 
 from app import routes
+
 
 
